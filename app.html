@@ -1,0 +1,66 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+<script>dayjs.locale('pt-br')</script>
+
+<div id= "app">
+  <form onsubmit="salvarAtividade(event)">
+
+    <div id= "place" class="card-bg">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.6667 8.33329C16.6667 13.3333 10 18.3333 10 18.3333C10 18.3333 3.33337 13.3333 3.33337 8.33329C3.33337 6.56518 4.03575 4.86949 5.286 3.61925C6.53624 2.36901 8.23193 1.66663 10 1.66663C11.7682 1.66663 13.4638 2.36901 14.7141 3.61925C15.9643 4.86949 16.6667 6.56518 16.6667 8.33329Z" stroke="#E4E4E7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 10.8333C11.3808 10.8333 12.5 9.714 12.5 8.33329C12.5 6.95258 11.3808 5.83329 10 5.83329C8.61933 5.83329 7.50004 6.95258 7.50004 8.33329C7.50004 9.714 8.61933 10.8333 10 10.8333Z" stroke="#E4E4E7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      Florianópolis, SC
+    </div>
+
+    <div class= "fields">
+      <div class= "field-wrapper">
+
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.4883 2.15496C10.1758 1.84238 9.75195 1.66672 9.30996 1.66663H3.33329C2.89127 1.66663 2.46734 1.84222 2.15478 2.15478C1.84222 2.46734 1.66663 2.89127 1.66663 3.33329V9.30996C1.66672 9.75195 1.84238 10.1758 2.15496 10.4883L9.40829 17.7416C9.78705 18.118 10.2993 18.3292 10.8333 18.3292C11.3673 18.3292 11.8795 18.118 12.2583 17.7416L17.7416 12.2583C18.118 11.8795 18.3292 11.3673 18.3292 10.8333C18.3292 10.2993 18.118 9.78705 17.7416 9.40829L10.4883 2.15496Z" stroke="#E4E4E7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.24996 6.66663C6.48008 6.66663 6.66663 6.48008 6.66663 6.24996C6.66663 6.01984 6.48008 5.83329 6.24996 5.83329C6.01984 5.83329 5.83329 6.01984 5.83329 6.24996C5.83329 6.48008 6.01984 6.66663 6.24996 6.66663Z" stroke="#E4E4E7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+
+        <input 
+          type="text" 
+          placeholder="Qual a atividade?"
+          name="atividade"
+          required
+        >
+      </div>
+
+      <div class= "field-wrapper">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.66667 1.66663V4.99996M13.3333 1.66663V4.99996M2.5 8.33329H17.5M4.16667 3.33329H15.8333C16.7538 3.33329 17.5 4.07948 17.5 4.99996V16.6666C17.5 17.5871 16.7538 18.3333 15.8333 18.3333H4.16667C3.24619 18.3333 2.5 17.5871 2.5 16.6666V4.99996C2.5 4.07948 3.24619 3.33329 4.16667 3.33329Z" stroke="#E4E4E7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <select name="dia">
+          <option value="2024-03-01">01 de feveiro</option> 
+        </select>
+      </div>
+
+      <div class= "field-wrapper">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.99996 4.99996V9.99996L13.3333 11.6666M18.3333 9.99996C18.3333 14.6023 14.6023 18.3333 9.99996 18.3333C5.39759 18.3333 1.66663 14.6023 1.66663 9.99996C1.66663 5.39759 5.39759 1.66663 9.99996 1.66663C14.6023 1.66663 18.3333 5.39759 18.3333 9.99996Z" stroke="#E4E4E7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <select name="hora">
+          <option value="10:30">10:30</option>
+        </select>
+      </div>
+    </div>
+    <button>Salvar atividade</button>
+
+  </form>
+
+  <main>
+  <h1>Atividades </h1>
+  <section></section>  
+  </main>
+</div>
